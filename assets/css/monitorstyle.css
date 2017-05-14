@@ -47,8 +47,8 @@ margin: 10px auto 40px;
     
 
 h3 {
-    line-height:30px;
-    padding-bottom:20px;
+    line-height:10px;
+    padding-bottom:8px;
 }
 h4 {
     line-height:40px;
@@ -136,18 +136,38 @@ background-size: cover;
 background-attachment: fixed;
 min-height:650px;
 }
+
 .div-trans {
-    padding:5px;
-    background-color: rgba(0, 255, 41, 0.25);
-min-height: 350px;
-margin-top: 200px;
+text-align: left;
+padding:1px;
+padding-left:10px; 
+background-color: rgba(76, 175, 80, 0.8);
+min-height: 00px;
+margin-top: 80px;
 color: #fff;
 -webkit-border-radius: 5px;
 -moz-border-radius: 5px;
 border-radius: 5px;
-margin-bottom:30px;
+margin-bottom:25px;
 }
     .div-trans .form-control {
+        background-color: rgba(255, 255, 255, 0);
+    }
+
+
+.div-trans1 {
+width: 1140px;
+text-align: left;
+padding:1px;
+padding-left:10px; 
+background-color: rgb(200, 230, 220);
+color: #212121;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+margin-bottom:20px;
+}
+    .div-trans1 .form-control {
         background-color: rgba(255, 255, 255, 0);
     }
 

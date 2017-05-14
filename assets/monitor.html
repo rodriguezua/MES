@@ -14,6 +14,23 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <![endif]-->
     <title>EcoAir</title>
+    <script>
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt').innerHTML =
+    h + ":" + m + ":" + s;
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
+    </script>
       <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
     <!--REQUIRED STYLE SHEETS-->
     <!-- BOOTSTRAP CORE STYLE CSS -->
@@ -21,7 +38,7 @@
     <!-- FONTAWESOME STYLE CSS -->
     <link href="css/font-awesome.min.css" rel="stylesheet" />
     <!-- CUSTOM STYLE CSS -->
-    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/monitorstyle.css" rel="stylesheet" />
     <!-- GOOGLE FONT -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -34,7 +51,7 @@
         
     </style>
 </head>
-<body>
+<body onload="startTime()">
     <!-- Navigation -->
      <header>
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -76,16 +93,35 @@
     <div id="home">
     <div class="container" >
         <div class="row ">
+            
             <div class="col-md-9 col-sm-9">
-                <div class="div-trans text-center">
-               <h3>Contact Us </h3>
+                <div class="div-trans">
+               <h3>Warnings: Check Air </h3>
             </div>
             </div>
+            
                <div class="col-md-3 col-sm-3">
-                   <div class="div-trans text-center">
-                        <h3>Contact Us </h3>
+                   <div class="div-trans">
+                        <h3 id="txt"></h3>
                    </div>
                </div>
+
+            <div class="col-md-9 col-sm-9">
+                <div class="div-trans1">
+               <h3>Warnings: Check Air
+                   <p></p>
+                   <p></p>  
+                   <p>Hu</p>  
+                   <p>Warnings: Check Air</p>  
+                   <p>Warnings: Check Air</p>  
+                   <p>Warnings: Check Air</p>  
+                   <p></p>  
+                   <p></p>  
+                   <p></p>  
+                    </h3>
+            </div>
+            </div>
+            
 
         </div>
     </div>
